@@ -4,10 +4,10 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <title>{{ site.name | xml_escape }} - Articles</title>
+    <title>{{ site.name | xml_escape }}'s Blog</title>
     <link>{{ site.url }}</link>
-    <description>Blog feed of Jaswinder Singh. All posts written by Jaswinder Singh.</description>
-    <pubDate>2013</pubDate>
+    <description>Blog feed of Jaswinder Singh. {{ site.description }}</description>
+    <pubDate>2015</pubDate>
 
     {% for post in site.posts %}
       {% if post.designs == nil and published == nil %}

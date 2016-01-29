@@ -21,11 +21,11 @@
   <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-114x114-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png" />
-  <meta property="og:image" content="{{ site.url }}/images/cover.jpg" />
+  <meta property="og:image" content="{{ site.url }}/images/logo.png" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:description" content="{% if page.layout == 'default' %}{{ page.title }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:site_name" content="Jaswinder Singh" />
+  <meta property="og:site_name" content="Jaswinder Singh Blog" />
   <meta property="og:type" content="blog" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@itsjaswinder" />
@@ -33,8 +33,8 @@
   <meta name="twitter:creator:id" content="Jaswinder Singh" />
   <meta name="twitter:url" content="{{ site.url }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{% if page.layout == 'default' %}{{ page.title }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
-  <meta name="twitter:image:src" content="{{ site.url }}/images/cover.jpg" />
+  <meta name="twitter:description" content="{% if page.layout == 'default' %}{{ site.description }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
+  <meta name="twitter:image:src" content="{{ site.url }}/images/logo.png" />
   <script src="{{ site.url }}/javascript/turbolinks.min.js"></script>
 
   {% if page.url == '/thanks.html'%}<meta name="robots" content="noindex, nofollow">{% endif %}
