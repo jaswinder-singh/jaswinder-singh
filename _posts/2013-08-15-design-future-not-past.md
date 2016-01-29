@@ -13,10 +13,10 @@ So I didn’t spend time designing/coding my site for the future, but rather I s
 
 People ask me why I don’t own an Android device. I’m technically a geek, so all the customisations and options available on Android should make me happy. Yet two of the reasons I hate Android is their UI inconsistency and inability to innovate on the user experience. Even though Android phones pack a 1.6 GHz quadcore processor, the apps—you know, the things I use to interact with the phone—still look ugly and the animations feel dated; they look old. That’s partially due to Android’s fragmented ecosystem and the slow new OS adoption rate. Apple boasts with the fact that most of its users are using the latest version of iOS. And that’s good, because it allows iOS developers and designers to use the latest technology and design for the future, by knowing they won’t have to support older versions of iOS for long.
 
-![](http://alexcican.com/images/blog/assets/ios-android-cook.jpg)
+![](/images/blog/assets/ios-android-cook.jpg)
 <figcaption>Fragmentation of Android versions vs iOS versions.</figcaption>
 
-At my University we used IE 6 to browse and build websites, Firefox was a commodity, but updating Internet Explorer on all the lab computers would have been very consuming. I get that not everyone has the possibility, or preference, to switch to a better browser, purchase the newest laptop, use the latest OS, keep up with the fast pace of change. In the end, to each their own. But refusing, or being unable, to upgrade revokes your right to expect from me to keep designing for your old OS.
+At my school we used IE 6 to browse and build websites, Firefox was a commodity, but updating Internet Explorer on all the lab computers would have been very consuming. I get that not everyone has the possibility, or preference, to switch to a better browser, purchase the newest laptop, use the latest OS, keep up with the fast pace of change. In the end, to each their own. But refusing, or being unable, to upgrade revokes your right to expect from me to keep designing for your old OS.
 
 ## An experiment
 Let’s try a hypothetical experiment: for one month, somehow, every website will render unusable for Internet Explorer 9 users and below.
@@ -34,7 +34,7 @@ I chose to design for the future, today. Because that’s the place **where chan
 Rather than spending time designing for the past, where many users are, and trying to fit the past in the present I’d try something else. I’d try to come up with ways future users won’t **get stuck in the past**. Things like making it easy for users to upgrade and update—maybe do it automatically, and simplifying the transition phase. Humans tend to hate change. I would still be stuck with Google Chrome 20 if it wasn’t for their auto-updating mechanism.
 
 ## Be grateful
-My sister came up to me the other day with something along the lines of *“being grateful is the best thing you can do in this world”*, quote she read in some book similar to “The Secret”. I responded with:
+My mom came up to me the other day with something along the lines of *“being grateful is the best thing you can do in this world”*, quote she read in some book. I responded with:
 
 > Being grateful is the biggest enemy of progress.
 

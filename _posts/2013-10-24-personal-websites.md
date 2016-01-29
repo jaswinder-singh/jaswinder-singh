@@ -24,7 +24,7 @@ Wrong! I used to believe that too, to such an extent that I had my portfolio on 
 
 ## Six degrees of separation
 
-What separates you from me is personality. That’s what makes me who I am. Personality defines how I approach and deal with issues, design choices I make, how I analyse and evaluate results, and how I communicate. Moreover, personality determines my preferences, emotions, and behaviour patterns. Remember that skills can be taught, [but personality is inherent](https://twitter.com/itsjaswinder/status/381735300638076928).
+What separates you from me is personality. That’s what makes me who I am. Personality defines how I approach and deal with issues, design choices I make, how I analyse and evaluate results, and how I communicate. Moreover, personality determines my preferences, emotions, and behaviour patterns. Remember that skills can be taught, [but personality is inherent](https://twitter.com/itsjaswinder/status/693084859451834368).
 
 The best thing about personality is that it can’t be copied. It’s unique for each individual because it’s influenced by many factors like society, social situations, culture, language, even birth order<sup>[1](#footnotes)</sup>. Going back to my previous example of the startup founder looking for a hire, a designer that doesn’t deal well with change and can adapt quickly won’t be a good fit for a startup.
 
