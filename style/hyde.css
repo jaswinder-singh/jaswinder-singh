@@ -70,6 +70,12 @@ html {
   text-decoration:none
 }
 
+.img-jas {
+    border-radius:50% 50% 50% 50%;
+    width:300px;
+    height:300px;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
