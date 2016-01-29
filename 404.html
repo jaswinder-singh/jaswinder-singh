@@ -36,7 +36,7 @@
 					
 					<div class="search">
 						<form method="get" action="/">
-							<input type="text" name="s" id="search-input" placeholder="Start your search here">
+							<input type="text" id="search-input" placeholder="Start your search here">
 							<button type="submit"></button>
 						</form>
 						<ul id="results-container"></ul>
@@ -67,7 +67,7 @@
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '/search_data.json',
+        json: 'http://jaswinder-singh.github.io/search_data.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
         noResultsText: 'No results found',
         limit: 10,
