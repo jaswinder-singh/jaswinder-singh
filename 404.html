@@ -35,11 +35,10 @@
 					</div>
 					
 					<div class="search">
-						<form method="get" action="/">
-							<input type="text" id="search-input" placeholder="Start your search here">
+						<form method="get" action="/search/">
+							<input type="text" name="s" placeholder="Start your search here">
 							<button type="submit"></button>
 						</form>
-						<ul id="results-container"></ul>
 					</div>
 				</div>
 				<img src="/style/404/images/light.png" class="light" alt="">
@@ -62,17 +61,5 @@
 		<script src="/style/404/js/jquery-1.11.3.min.js"></script>
 		<script src="/style/404/js/jquery.placeholder.js"></script>
 		<script src="/style/404/js/custom.js"></script>
-		<script src="/style/404/js/jekyll-search.js"></script>
-		<script type="text/javascript">
-      SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: 'http://jaswinder-singh.github.io/search_data.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
-        limit: 10,
-        fuzzy: false,
-      })
-    </script>
   </body>
 </html>
