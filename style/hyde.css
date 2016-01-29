@@ -70,10 +70,8 @@ html {
   text-decoration:none
 }
 
-.img-jas {
-    border-radius:50% 50% 50% 50%;
-    width:300px;
-    height:300px;
+.avatar-jas {
+    position:absolute;
 }
 
 /* Sidebar nav */
