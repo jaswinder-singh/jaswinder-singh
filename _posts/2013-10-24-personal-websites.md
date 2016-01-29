@@ -10,7 +10,7 @@ I often browse personal websites of freelance designers & devs. After you visit 
 I’m not talking only about presentation style. But also about the site’s language, its structure, and its goals. Most of the times, the structure of a freelancer’s site looks like this:
 
     menu bar
-    *avatar* Hi I’m Alex born in, bla, bla
+    *avatar* Hi I’m Jaswinder born in, bla, bla
     skills/what I do, bla bla
     experience, bla bla
     CHECK MY PORTFOLIO
