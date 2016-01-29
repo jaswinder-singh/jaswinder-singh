@@ -1,0 +1,84 @@
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+<!doctype html>
+<html lang="en-gb">
+<head>
+  <title>{{ page.title }}{% if page.layout == 'default' %} - {{ site.name }}{% endif %}</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="{% if page.layout == 'default' %}{{ site.description }}{% else %}{% if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}{% endif %}" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="msapplication-TileImage" content="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="author" href="https://plus.google.com/+JaswinderSingh26/" />
+  <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/style/style.min.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="{{ site.url }}/style/print.css" />
+  <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/style/ie9.css" />
+  <![endif]-->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-57x57-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-152x152-precomposed.png" />
+  <meta property="og:image" content="{{ site.url }}/images/cover.jpg" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{% if page.layout == 'default' %}{{ page.title }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="Jaswinder Singh" />
+  <meta property="og:type" content="blog" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@itsjaswinder" />
+  <meta name="twitter:creator" content="@itsjaswinder" />
+  <meta name="twitter:creator:id" content="Jaswinder Singh" />
+  <meta name="twitter:url" content="http://alexcican.com" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{% if page.layout == 'default' %}{{ page.title }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
+  <meta name="twitter:image:src" content="{{ site.url }}/images/cover.jpg" />
+  <script src="{{ site.url }}/javascript/turbolinks.min.js"></script>
+
+  {% if page.url == '/thanks.html'%}<meta name="robots" content="noindex, nofollow">{% endif %}
+</head>
+<body {% if page.url == '/photos/'%}class="sliderRemoveScroll"{% endif %} {% if page.url == '/404.html'%}class="notFoundNoScroll"{% endif %}>
+  <!--[if lt IE 9]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  <nav id="mainNav" role="navigation">
+    <span class="menuIcon icon {% if page.url == '/index.html'%} transparent {% endif %}" title="Menu (Esc)" tabindex="0" data-icon="m"><span>Menu</span></span>
+
+    <div id="navigation">
+      <p><span class="heading">jaswinder singh</span><br/><span class="subheading">King in the North</span></p>
+      <p class="menu_label">Menu</p>
+
+      <section>
+        <ul class="siteLinks">
+          <li><span>Site dishes</span></li>
+          <li><a href="{{site.url}}" class="home {% if page.url == '/index.html'%} current {% endif %}" title="Learn about me (H)">Home</a></li>
+          <!-- li><a href="{{site.url}}/stuff/" class="work {% if page.url == '/stuff/'%} current {% endif %}" title="Check out my work (W)">My Stuff</a></li -->
+          <li><a href="http://lab.alexcican.com" class="lab" title="Visit my lab (L)">Lab</a></li>
+          <li><a href="{{site.url}}/blog/" class="blog {% if page.url == '/blog/'%} current {% endif %}" title="Read my blog (B)">Blog</a></li>
+          <!-- <li><a href="{{site.url}}/photos/" class="photos {% if page.url == '/photos/'%} current {% endif %}" title="View my photos (P)">Photos</a></li> -->
+        </ul>
+
+        <ul>
+          <li><span>Main contact</span></li>
+          <li><a href="mailto:&#106;&#97;&#115;&#119;&#105;&#110;&#100;&#101;&#114;&#64;&#119;&#105;&#115;&#101;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#46;&#105;&#110;" class="email" title="Email me (E)">Email</a></li>
+        </ul>
+
+        <ul>
+          <li><span>Desserts</span></li>
+          <li><a href="http://twitter.com/itsjaswinder" title="Find me on Twitter" target="_blank">Twitter</a></li>
+          <li><a href="http://facebook.com/jassithedude" title="Find me on Facebook" target="_blank">Facebook</a></li>
+          <li><a href="http://github.com/jaswinder-singh" title="Find me on GitHub" target="_blank">GitHub</a></li>
+          <li><a href="http://instagram.com/itsjaswinder" title="Find me on Instagram" target="_blank">Instagram</a></li>
+          <li><a href="https://www.youtube.com/channel/UCporjZoVfoouw_myBh4jAaA" title="Find me on YouTube" target="_blank">YouTube</a></li>
+        </ul>
+
+        <p>Some of my dishes may contain sarcasm and humour. <br/>Please don&rsquo;t inform anyone about any allergies you might have.</p>
+      </section>
+    </div>
+  </nav>
+
+  <div id="container">
