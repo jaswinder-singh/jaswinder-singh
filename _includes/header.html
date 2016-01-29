@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en-gb">
 <head>
-  <title>{{ page.title }}{% if page.layout == 'default' %} - {{ site.name }}{% endif %}</title>
+  <title>{{ page.title }}{% if page.layout == 'post' %} - {{ site.name }}{% endif %}</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="{% if page.layout == 'default' %}{{ site.description }}{% else %}{% if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}{% endif %}" />
