@@ -4,8 +4,8 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <title>Blog of Jaswinder Singh</title>
-    <link>http://alexcican.com/blog/</link>
+    <title>{{ site.name | xml_escape }} - Articles</title>
+    <link>{{ site.url }}</link>
     <description>Blog feed of Jaswinder Singh. All posts written by Jaswinder Singh.</description>
     <pubDate>2013</pubDate>
 
