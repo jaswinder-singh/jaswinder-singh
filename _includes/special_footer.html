@@ -89,13 +89,15 @@ $(document).ready(function(){
                 $("#user-name").addClass("error");
             }
         } else {
-            var data_of_form = $(this).serialize();
-            $.ajax({
-                url: '//formspree.io/{{ site.simple_email }}',
-                type: 'POST',
-                data: data_of_form,
-                dataType: "json"
-                success: function(data) {
+        var $contactForm = $('#contact-form');
+        $contactForm.submit(function(e) {
+          e.preventDefault();
+        $.ajax({
+        url: '//formspree.io/{{ site.simple_email }}',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function(data) {
                         $("#user-name").val("");
                         $("#user-email").val("");
                         $("#user-message").val("");
@@ -107,8 +109,8 @@ $(document).ready(function(){
                                 $(".info-message-form p").text("");
                             }, 5000
                         );
-                    }, 
-                error: function(){
+        },
+        error: function(err) {
                     // alert("curse you! perry the platypus.");
                     $(".info-message-form p").text("Error");
                     $(".info-message-form").addClass('error');
@@ -118,8 +120,10 @@ $(document).ready(function(){
                             $(".info-message-form p").text("");
                         }, 5000
                     );
-                }
-            });
+        }
+        });
+        });
+        
         }
         return false;
     });
