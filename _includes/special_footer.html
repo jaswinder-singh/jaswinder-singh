@@ -51,7 +51,7 @@ $(document).ready(function(){
     var map;
     function initialize_map() {
         if ($('.map').length) {
-            var myLatLng = new google.maps.LatLng(27.950778, 80.777547);
+            var myLatLng = new google.maps.LatLng(27.950570, 80.777471);
             var mapOptions = {
                 zoom: 7,
                 center: myLatLng,
@@ -92,12 +92,10 @@ $(document).ready(function(){
             var data_of_form = $(this).serialize();
             $.ajax({
                 url: '//formspree.io/{{ site.simple_email }}',
-                dataType: "json",
-                data: data_of_form,
                 type: 'POST',
+                data: data_of_form,
+                dataType: "json"
                 success: function(data) {
-                    if ( data == "success" )
-                    {
                         $("#user-name").val("");
                         $("#user-email").val("");
                         $("#user-message").val("");
@@ -109,24 +107,14 @@ $(document).ready(function(){
                                 $(".info-message-form p").text("");
                             }, 5000
                         );
-                    } else {
-                        $(".info-message-form p").text("Error");
-                        $(".info-message-form").addClass('error');
-                        setTimeout(
-                            function(){
-                                $(".info-message-form").removeClass('error').fadeOut(500);
-                                $(".info-message-form p").text("");
-                            }, 5000
-                        );
-                    }
-                },
+                    }, 
                 error: function(){
                     // alert("curse you! perry the platypus.");
                     $(".info-message-form p").text("Error");
                     $(".info-message-form").addClass('error');
                     setTimeout(
                         function(){
-                            $(".info-message-form").removeClass('error');
+                            $(".info-message-form").removeClass('error');.fadeOut(500);
                             $(".info-message-form p").text("");
                         }, 5000
                     );
