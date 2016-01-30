@@ -92,7 +92,7 @@ $(document).ready(function(){
             var data_of_form = $(this).serialize();
             $.ajax({
                 url: '//formspree.io/{{ site.simple_email }}',
-                dataType: "json"
+                dataType: "json",
                 data: data_of_form,
                 type: 'POST',
                 success: function(data) {
