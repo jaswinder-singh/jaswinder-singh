@@ -1,80 +1,88 @@
+---
+title: Home | Jaswinder Singh
+layout: special
+---
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+        <!-- Start Home-header section -->
+        <section class="home-header border-bottom padding-block">
+            <!-- start container -->
+            <div class="container">
+                <!-- start row -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-lg-5 text-center">
+                        <!-- Your foto -->
+                        <div class="full-length-photo">
+                            <img src="{{ site.url }}/assets/img/man-home.png" alt="Avatar">
+                        </div>
+                        <!-- end your foto -->
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-lg-7">
+                        <!-- Menu -->
+                        <div class="small-menu">
+                            <div class="icons-menu">
+                                <button class="icons-menu-toggle-button" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <i class="icons-menu-icon fa fa-bars"></i>
+                                </button>
+                                <ul class="icons-menu-items">
+                                    <li class="icons-menu-item">
+                                        <a href="{{ site.url }}/profile/" class="icons-menu-button" style="z-index: 2; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
+                                            <i class="icons-menu-icon fa fa-user" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
+                                        </a>
+                                    </li>
+                                    <!-- li class="icons-menu-item">
+                                        <a href="{{ site.url }}/resume.html" class="icons-menu-button" style="z-index: 1; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
+                                            <i class="icons-menu-icon fa fa-file-text" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
+                                        </a>
+                                    </li -->
+                                    <li class="icons-menu-item">
+                                        <a href="{{ site.lab }}/lab.html" class="icons-menu-button" style="z-index: 1; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
+                                            <i class="icons-menu-icon fa fa-suitcase" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
+                                        </a>
+                                    </li>
+                                    <li class="icons-menu-item">
+                                        <a href="{{ site.url }}/blog/" class="icons-menu-button" style="z-index: 2; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
+                                            <i class="icons-menu-icon fa fa-pencil" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
+                                        </a>
+                                    </li>
+                                    <li class="icons-menu-item">
+                                        <a href="{{ site.url }}/contact/" class="icons-menu-button" style="z-index: 2; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
+                                            <i class="icons-menu-icon fa fa-envelope" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 
-  <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+                            <!-- Open Menu -->
+                            <div class="arrow">
+                                <div class="open-menu">open menu</div>
+                            </div>
+                            <!-- End Open Menu -->
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+                        </div>
+                        <!-- End Menu -->
 
-  <title>
-  Jaswinder Singh
-  </title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="/style/poole.css">
-  <link rel="stylesheet" href="/style/syntax.css">
-  <link rel="stylesheet" href="/style/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <!-- Icons -->
-  <meta name="msapplication-TileImage" content="/images/apple-touch-icon-144x144-precomposed.png">
-  <link rel="author" href="https://plus.google.com/+JaswinderSingh26/" />
-  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-  <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-144x144-precomposed.png" />
-  
-  <meta property="og:image" content="/images/logo.png"/>
-  <meta property="og:title" content="Jaswinder Singh Blog"/>
-  <meta property="og:description" content="Internet, Gadgets, DIY, Tech Savvy, Life Hacking, Fortune 500, and ∞."/>
-  <meta property="og:url" content="https://alexcican.com/index.html"/>
-  <meta property="og:site_name" content="Jaswinder Singh" />
-  <meta property="og:type" content="blog" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@itsjaswinder" />
-  <meta name="twitter:creator" content="@itsjaswinder" />
-  <meta name="twitter:creator:id" content="Jaswinder Singh" />
-  <meta name="twitter:url" content="http://alexcican.com"/>
-  <meta name="twitter:title" content="Jaswinder Singh"/>
-  <meta name="twitter:description" content="Internet, Gadgets, DIY, Tech Savvy, Life Hacking, Fortune 500, and ∞."/>
-  <meta name="twitter:image:src" content="/images/logo.png"/>
-
-</head>
-<body>
-  <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <img src="images/logo.png">
-        <a href="/">JASWINDER</a>
-      </h1>
-    </div>
-<br>
-    <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="/">Home</a>
-    <a class="sidebar-nav-item" href="/lab.html">Experiments</a>
-    <a class="sidebar-nav-item" href="/blog/">Blog</a>
-    </nav>
-  </div>
-</div>
-
-    <div class="content container">
-      <div class="post">
-  <h1 class="post-title">About Me</h1>
-  <span class="post-date">28 Jan 2015</span>
-  
-    <p>I don&rsquo;t find myself defined by the work I&rsquo;ve done. I define myself by the work I want to do.</p>
-    <p>I believe skills can be taught&mdash;personality is inherent. My personality is what separates me from others. Rather than getting awards, advancing status, or gaining accolades, I prefer to keep learning, continue challenging myself, and do <a href="/lab.html">interesting things</a> that matter.</p>
-    <p>I&rsquo;m the cumulation of many skills and talents. I&rsquo;m wisdom, creativity, and experience. I&rsquo;m not a collection of hours. I&rsquo;ve stopped seeing myself as a per-hour commodity.</p>
-    <blockquote>When you've reached a certain point of your life, there are people out there waiting to see you fall, but rather than let gravity take you down, sometimes you have to take matters into your own hands and fly.</blockquote>
-    <p><h3>Thanks!</h3></p>
-    
-</div>
-
-    </div>
-
-  </body>
-</html>
+                        <!-- Your Name -->
+                        <h1 class="title">{{ site.name }}</h1>
+                        <!-- Your Profession -->
+                        <h3 class="sub-title">Creators Never Follow</h3>
+                        <!-- social icon -->
+                        <div class="social">
+                            <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
+                                <!-- social icons -->
+                                <li><a class="ukie-icons hover-animate" href="{{ site.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="{{ site.googleplus }}"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="{{ site.instagram }}"><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="{{ site.github }}"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- end social icon -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- End Home-header section -->

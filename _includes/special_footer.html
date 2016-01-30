@@ -1,0 +1,144 @@
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <a href="tel:{{ site.phone_noFormat }}" class="hover-animate">
+                        <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> {{ site.phone }}
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <a href="mailto:{{ site.email }}" class="hover-animate">
+                        <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> {{ site.email }}
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <a href="#" class="hover-animate">
+                        <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> {{ site.short_add }}
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
+                    <span class="copyright">Copyright © 2015 All right reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scroll to Top -->
+<a href="#" class="btn scrollToTop"><i class="fa fa-angle-up"></i></a>
+<!-- End Scroll to Top -->
+
+<!-- Scripts -->
+<script src="{{ site.url }}/assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/boostrap-files/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.appear.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.nicescroll.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.inview.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.knob.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/jquery.cookie.js" type="text/javascript"></script>
+{% if page.url == '/contact/'%}
+<script type="text/javascript">
+$(document).ready(function(){
+    "use strict";
+
+    var map;
+    function initialize_map() {
+        if ($('.map').length) {
+            var myLatLng = new google.maps.LatLng(27.950778, 80.777547);
+            var mapOptions = {
+                zoom: 7,
+                center: myLatLng,
+                scrollwheel: false,
+                panControl: false,
+                zoomControl: true,
+                scaleControl: false,
+                mapTypeControl: false,
+                streetViewControl: false
+            };
+            map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Jaswinder Singh',
+                icon: './assets/img/marker-' + $('#stylesheet-new').attr('data-color') + '.png'
+            });
+        } else {
+            return false;
+        }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize_map);
+
+    function valid_email_address(email) {
+        var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        return pattern.test(email);
+    }
+
+    $("#contact-form").submit( function() {
+        if ( !valid_email_address( $("#user-email").val() ) || $("#user-name").val().length <= 2  )  {
+            if ( !valid_email_address( $("#user-email").val() ) ) {
+                $("#user-email").addClass("error");
+            }
+            if ( $("#user-name").val().length <= 2 ){
+                $("#user-name").addClass("error");
+            }
+        } else {
+            var data_of_form = $(this).serialize();
+            $.ajax({
+                url: '//formspree.io/{{ site.email }}',
+                data: data_of_form,
+                type: 'POST',
+                success: function(data) {
+                    if ( data == "success" )
+                    {
+                        $("#user-name").val("");
+                        $("#user-email").val("");
+                        $("#user-message").val("");
+                        $(".info-message-form p").text("Message sent!");
+                        $(".info-message-form").addClass('success');
+                        setTimeout(
+                            function(){
+                                $(".info-message-form").removeClass('success');
+                                $(".info-message-form p").text("");
+                            }, 5000
+                        );
+                    } else {
+                        $(".info-message-form p").text("Error");
+                        $(".info-message-form").addClass('error');
+                        setTimeout(
+                            function(){
+                                $(".info-message-form").removeClass('error').fadeOut(500);
+                                $(".info-message-form p").text("");
+                            }, 5000
+                        );
+                    }
+                },
+                error: function(){
+                    alert("te1");
+                    $(".info-message-form p").text("Error");
+                    $(".info-message-form").addClass('error');
+                    setTimeout(
+                        function(){
+                            $(".info-message-form").removeClass('error');
+                            $(".info-message-form p").text("");
+                        }, 5000
+                    );
+                }
+            });
+        }
+        return false;
+    });
+    $(".close-msg").on("click", function() {
+        $(this).parent().removeClass("error");
+    });
+    $("#user-name, #user-email").on("click", function() {
+        $(this).removeClass("error");
+    });
+});
+</script>{% endif %}
+<script src="{{ site.url }}/assets/js/scripts.js" type="text/javascript"></script>
+</body>
+</html>
