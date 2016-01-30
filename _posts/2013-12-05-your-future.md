@@ -16,7 +16,7 @@ A couple of weeks ago I visited a big video content website for the first time. 
 ## Towards a more personalised future
 The Internet started as basic pages linked together. Back then, the Internet revolved around information and content: static websites, weblogs, forums. After that, it moved to platforms which allowed you to create a digital persona for others to see: MySpace, Facebook, YouTube, Twitter, Instagram, etc. In the near future however, the Internet will morph into a giant mirror—whichever platform you visit, you will see yourself: the things you like (and won’t see the things you dislike).
 
-[image of giant mirror with face]
+<img src="{{relative}}/images/blog/assets/face-in-mirror.jpg" alt="image of giant mirror with face" />
 
 I visit YouTube almost daily not because of the cat videos or the latest popular video of Miley Cyrus swinging from a wrecking ball, but thanks to my subscriptions to people whom I like watching their videos. YouTube got that, and it’s displaying those videos on “my” homepage:
 
