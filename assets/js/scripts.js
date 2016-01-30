@@ -1,29 +1,7 @@
-/*
- Author: Ukieweb
- Template: ukieCard
- Version: 1.0
- URL: http://themeforest.net/user/UkieWeb
- */
-
 $(document).ready(function(){
-
     "use strict";
-
-
-    /*
-     ----------------------------------------------------------------------
-     Preloader
-     ----------------------------------------------------------------------
-     */
     $(".loader").delay(400).fadeOut();
     $(".animationload").delay(400).fadeOut("fast");
-
-
-    /*
-     ----------------------------------------------------------------------
-     Scroll
-     ----------------------------------------------------------------------
-     */
     //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 400) {
@@ -38,18 +16,12 @@ $(document).ready(function(){
         return false;
     });
 
-
-    /*
-     ----------------------------------------------------------------------
-     Animated menu
-     ----------------------------------------------------------------------
-     */
     $('.menu .menu-img').hover(function() {
 
         var $div = $(this);
         var img = document.createElement('img');
         var img_name = $div.attr("data-img-name");
-        img.src = "./assets/img/menu/" + img_name + ".gif?t=" + new Date().getTime();
+        img.src = "/assets/img/menu/" + img_name + ".gif?t=" + new Date().getTime();
 
         $(img).load(function(){
             $div.attr("src",img.src);
@@ -59,16 +31,11 @@ $(document).ready(function(){
 
         var $div = $(this);
         var img_name = $div.attr("data-img-name");
-        var src = "./assets/img/menu/" + img_name + ".png";
+        var src = "/assets/img/menu/" + img_name + ".png";
         $div.attr("src",src);
 
     });
 
-    /*
-     ----------------------------------------------------------------------
-     Animation
-     ----------------------------------------------------------------------
-     */
     $('.animated').appear(function() {
         var elem = $(this);
         var animation = elem.data('animation');
@@ -189,54 +156,6 @@ $(document).ready(function(){
             });
         });
     });
-
-    /*
-     ----------------------------------------------------------------------
-     Style switcher
-     ----------------------------------------------------------------------
-     */
-
-    var style = ('#stylesheet-new');
-    $('.new-colour').on("click", function(el){
-        el.preventDefault();
-        var id = $(this).attr('href');
-
-        $.cookie("colour-scheme",id);
-
-        $(style).attr('href', 'assets/css/colour-scheme/' + id + '.css');
-        $(style).attr('data-color', colour_scheme);
-        $.cookie("colour-skills",$(this).attr('data-color'));
-    });
-
-    $('.new-bg').on("click", function(el){
-        el.preventDefault();
-        var color = $(this).attr('data-bg');
-
-        $.cookie("colour-bg",color);
-
-        $(style).attr('data-bg', color);
-        $("body").css('background-color',color);
-    });
-
-    $('.style-open').on("click", function(el){
-        el.preventDefault();
-        $('.style-switcher').toggleClass('style-off');
-    });
-
-    var colour_scheme = $.cookie("colour-scheme");
-    var colour_bg = $.cookie("colour-bg");
-    if( colour_scheme != "" && colour_scheme != undefined ){
-        $(style).attr('href', 'assets/css/colour-scheme/' + colour_scheme + '.css');
-        $(style).attr('data-color', colour_scheme);
-    } else{
-        $.cookie("colour-scheme","color-blue");
-    }
-    if ( colour_bg != "" && colour_bg != undefined ){
-        $("body").css('background-color',colour_bg);
-    }
-
-
-
 }); // End $(document).ready(function(){
 
 
