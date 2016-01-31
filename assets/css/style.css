@@ -207,7 +207,8 @@ a:hover, a:visited, a:focus, a:active{
 #wraper{
     border-width: 1px;
     border-style: solid;
-    margin: 50px auto;
+/*    margin: 50px auto; */
+    margin: 0px auto;
     width: 1230px;
 }
 .scrollToTop {
