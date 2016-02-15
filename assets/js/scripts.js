@@ -56,12 +56,12 @@ $(document).ready(function(){
      ----------------------------------------------------------------------
      Nice scroll
      ----------------------------------------------------------------------
-     
+     */
     $("html").niceScroll({
         cursorcolor: '#fff',
         cursoropacitymin: '0',
         cursoropacitymax: '1',
-        cursorwidth: '2px',
+        cursorwidth: '4px',
         zindex: 999999,
         horizrailenabled: false,
         enablekeyboard: false

@@ -5,8 +5,7 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en"> <!--<![endif]-->
-
+<html lang="en" manifest="manifest.appcache"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
@@ -19,6 +18,13 @@
     <link type="text/css" media="all" href="{{ site.url }}/assets/css/style.css" rel="stylesheet" />
     <link type="text/css" media="all" href="{{ site.url }}/assets/css/color.css" rel="stylesheet" data-color="color-blue" id="stylesheet-new">
     <link type="text/css" media="all" href="{{ site.url }}/assets/css/responsive.css" rel="stylesheet" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#492ca2">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#492ca2">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <!-- Favicons -->
     <meta name="msapplication-TileImage" content="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
@@ -97,11 +103,11 @@
 <script src="{{ site.url }}/assets/js/jquery.knob.min.js" type="text/javascript"></script>
 <script src="{{ site.url }}/assets/js/jquery.cookie.js" type="text/javascript"></script>
 <script src="{{ site.url }}/assets/js/scripts.js" type="text/javascript"></script>
-<script src="{{ site.url }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
-<script src="{{ site.url }}/assets/js/menu.js" type="text/javascript"></script>
-<script src="{{ site.url }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
-<script src="{{ site.url }}/assets/js/menu.js" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp" type="text/javascript"></script>
+{% if page.url == '/index.html'%}<script src="{{ site.url }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/menu.js" type="text/javascript"></script>{% endif %}
+{% if page.url == '/'%}<script src="{{ site.url }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
+<script src="{{ site.url }}/assets/js/menu.js" type="text/javascript"></script>{% endif %}
+{% if page.url == '/contact/'%}<script src="https://maps.googleapis.com/maps/api/js?v=3.exp" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function(){
     "use strict";
@@ -134,6 +140,6 @@ $(document).ready(function(){
     }
     google.maps.event.addDomListener(window, 'load', initialize_map);
 });
-</script>
+</script>{% endif %}
 </body>
 </html>
