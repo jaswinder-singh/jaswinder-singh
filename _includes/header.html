@@ -11,8 +11,8 @@
   <meta name="msapplication-TileImage" content="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
   <link rel="author" href="{{ site.googleplus }}" />
   <link rel="shortcut icon" href="{{ site.url }}/images/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/style/style.min.css" />
-  <link rel="stylesheet" type="text/css" media="print" href="{{ site.url }}/style/print.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/blog/style/style.min.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="{{ site.url }}/assets/blog/style/print.css" />
   <!--[if lt IE 10]>
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/style/ie9.css" />
   <![endif]-->
@@ -25,17 +25,17 @@
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:description" content="{% if page.layout == 'default' %}{{ site.description }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:site_name" content="{{ site.name }} Blog" />
+  <meta property="og:site_name" content="{{ site.name }}'s Blog" />
   <meta property="og:type" content="blog" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@itsjaswinder" />
-  <meta name="twitter:creator" content="@itsjaswinder" />
+  <meta name="twitter:site" content="{{ site.twitter_username }}" />
+  <meta name="twitter:creator" content="{{ site.twitter_username }}" />
   <meta name="twitter:creator:id" content="{{ site.name }}" />
   <meta name="twitter:url" content="{{ site.url }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:description" content="{% if page.layout == 'default' %}{{ site.description }}{% else if page.cover %}{{ content | split:'<!--more-->' | first | strip_html }}{% endif %}" />
   <meta name="twitter:image:src" content="{{ site.url }}/images/logo.png" />
-  <script src="{{ site.url }}/javascript/turbolinks.min.js"></script>
+  <script src="{{ site.url }}/assets/blog/javascript/turbolinks.min.js"></script>
 
   {% if page.url == '/thanks.html'%}<meta name="robots" content="noindex, nofollow">{% endif %}
 </head>
@@ -61,7 +61,7 @@
 
         <ul>
           <li><span>Main contact</span></li>
-          <li><a href="mailto:&#106;&#97;&#115;&#119;&#105;&#110;&#100;&#101;&#114;&#64;&#119;&#105;&#115;&#101;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#46;&#105;&#110;" class="email" title="Email me (E)">Email</a></li>
+          <li><a href="mailto:{{ site.email }}" class="email" title="Email me (E)">Email</a></li>
         </ul>
 
         <ul>

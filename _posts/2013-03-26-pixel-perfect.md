@@ -14,7 +14,7 @@ Yet I challenged myself to try and do it, by redesigning this website.
 ##Pick a grid
 I chose to work on a 32px grid. If you’re using Photoshop, go to *Preferences [Cmd + K] > Guides, Grids & Slices*, and add a Gridline every 32 pixels with Subdivision of 1. To view the grid, go to *View > Show > Grid [Cmd + ']*.
 
-![photoshop preferences](http://alexcican.com/images/blog/assets/photoshop-preferences.png)
+![photoshop preferences]({{ site.url }}/images/blog/assets/photoshop-preferences.png)
 
 Stick to the grid. Every vector icon, image, text, container, needs to adhere to the 32 pixels. To help you out, Photoshop can snap your elements to the grid. To enable it go to *View > Snap To*, make sure *Grid* is checked, and enable by going to *View > Snap [Shift + Cmd + ;]*.
 
