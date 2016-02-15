@@ -40,7 +40,7 @@ Let’s get into **how I did** it.
 
 If you want your files to be accessible by anyone, you have to move them into your “Public” folder. If you’re using absolute paths for your website, I suggest you change it to relative paths. So from this:
 
-	<a href="http://alexcican.com/web/file.html"></a>
+	<a href="{{ site.url }}/web/file.html"></a>
 
 change them to this:
 
@@ -52,7 +52,7 @@ Next step is to **change the DNS** to point to the Dropbox folder (skip this if 
 
 If you’re using GoDaddy, login to *“Your account”* and launch the *“Domains”*. Then, click on the domain name you want to edit and from the toolbar, select the *forward* icon. Click *“Forward Domain”* and insert in the popup input, the complete URL of the `index.html` from inside the Dropbox folder (to get the link: *right click on the file>Dropbox>Copy public link*).
 
-![godaddy forward domain](http://alexcican.com/images/blog/assets/godaddy-forward-domain.jpg)
+![godaddy forward domain]({{ site.url }}/images/blog/assets/godaddy-forward-domain.jpg)
 
 Wait a few hours and you should be able to access the website hosted on Dropbox via your domain name!
 
@@ -66,11 +66,11 @@ The other downside I found was the **URL system**. On Dropbox, the URL of a file
 
 This means that the Dropbox URL would be visible when navigating the website. I couldn’t have something like:
 
-	http://alexcican.com/file.html
+	{{ site.url }}/file.html
 
 unless I did a URL forwarding with masking from my DNS settings. This was not optimal because whichever page of the website I’d browse, it would show up only as:
 
-	alexcican.com
+	{{ site.pretty_url }}
 
 To do this URL masking on GoDaddy, repeat the steps above for pointing the DNS record to Dropbox, but in the popup click on *“Advanced Options”* and select the second option: *“Forward with Masking”*.
 
@@ -88,13 +88,13 @@ Searching for solutions to this issue I came across GitHub. On GitHub, you can h
 
 To enable **custom domain names**, you just have to create a file named `CNAME`, in the root of the repo or branch, open the file with a text editor and add your domain name inside:
 
-	alexcican.com
+	{{ site.pretty_url }}
 
 GitHub pages also supports **custom error pages**. Simply push a `404.html` file with your message in the root of the repo or branch.
 
 Now it’s time to change the **DNS settings** from GoDaddy to point to our GitHub page. Login to your account, launch the domains and click on the domain name you want to change. From that page (see screenshot above), go down and find the *“DNS Manager”* section. Click on *“Launch”*.
 
-You have to decide what domain name you’ll be using. For a sub-domain like `http://www.alexcican.com` or `http://blog.alexcican.com` you would simply create a `CNAME` record pointing to `charlie.github.com`. If you are using a top-level domain like `http://alexcican.com`, you must use an `A (Host)` record pointing to `192.30.252.153` and another one to `192.30.252.154`. There’s no need to add a `CNAME` record for top-level domains. [Read more in the documentation](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/).
+You have to decide what domain name you’ll be using. For a sub-domain like `http://www.{{ site.pretty_url }}` or `http://blog.{{ site.pretty_url }}` you would simply create a `CNAME` record pointing to `charlie.github.com`. If you are using a top-level domain like `{{ site.url }}`, you must use an `A (Host)` record pointing to `192.30.252.153` and another one to `192.30.252.154`. There’s no need to add a `CNAME` record for top-level domains. [Read more in the documentation](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/).
 
 ##Downsides of GitHub
 
@@ -124,4 +124,4 @@ There are some disadvantages to both systems:
 
 But for me it works. For me, the **advantages outweigh the disadvantages**. I like my websites more (since they load faster and stay online longer), I feel more relaxed and I also sleep better at night (secure servers, backups exist). Lastly, I feel liberated since I can access my files anytime from anywhere (and edit them, almost from any device).
 
-Next article I have scheduled, is a continuation of this one: [*“How I moved my blog to Dropbox”*](http://alexcican.com/post/blog-dropbox-scriptogram). Make sure you [grab the RSS feed](http://feeds.feedburner.com/alexcican) and you [follow me on Twitter](http://twitter.com/itsjaswinder).
+Next article I have scheduled, is a continuation of this one: [*“How I moved my blog to Dropbox”*]({{ site.url }}/post/blog-dropbox-scriptogram.html). Make sure you [follow me on Twitter]({{ site.twitter }}).

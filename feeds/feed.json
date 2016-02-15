@@ -10,7 +10,7 @@ permalink: /json/
             {% if item.title != null and item.title != empty %}
             {% unless first %},{% endunless %}{
                 "title": {{item.title | jsonify}},
-                "content": {{item.content | markdownify | strip_html | jsonify}},
+                "content": {{item.content | strip_html | jsonify}},
                 "link": "{{ site.baseurl }}{{ item.url }}",
                 "date": "{{ item.date }}",
                 "excerpt": "{{ item.snippet }}",
@@ -27,7 +27,7 @@ permalink: /json/
     {% if post.title != null and post.title != empty %}
     {% unless first %},{% endunless %}{
         "title": {{post.title | jsonify}},
-        "content": {{post.content | markdownify | strip_html | jsonify}},
+        "content": {{post.content | strip_html | jsonify}},
         "link": "{{ site.baseurl }}{{ post.url }}",
         "date": "{{ post.date }}",
         "excerpt": "{{ post.snippet }}",

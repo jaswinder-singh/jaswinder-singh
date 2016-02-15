@@ -33,7 +33,7 @@ A few months ago there was a trend with avatars, to display your avatar in black
 
 <a href="/images/blog/assets/avatars.jpg" class="img" target="_blank"><img src="/images/blog/assets/avatars.jpg" alt="avatars" /></a>
 
-<small>Top tier: [@soffes](https://twitter.com/soffes), [@salleedesign](https://twitter.com/salleedesign), [@_dte](https://twitter.com/_dte), [@MengTo](https://twitter.com/MengTo). Bottom tier: [@jessicahische](https://twitter.com/jessicahische), [@paul_irish](https://twitter.com/paul_irish), [@repponen](https://twitter.com/repponen), [@drewwilson](https://twitter.com/drewwilson), [@itsjaswinder](http://twitter.com/itsjaswinder).</small>
+<small>Top tier: [@soffes](https://twitter.com/soffes), [@salleedesign](https://twitter.com/salleedesign), [@_dte](https://twitter.com/_dte), [@MengTo](https://twitter.com/MengTo). Bottom tier: [@jessicahische](https://twitter.com/jessicahische), [@paul_irish](https://twitter.com/paul_irish), [@repponen](https://twitter.com/repponen), [@drewwilson](https://twitter.com/drewwilson), [@itsjaswinder]({{ site.twitter }}).</small>
 
 That’s why I made my avatar yellow.
 

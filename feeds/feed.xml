@@ -7,7 +7,7 @@ permalink: /feed/
   <channel>
     <title>{{ site.name | xml_escape }}'s Blog</title>
     <link>{{ site.url }}</link>
-    <description>Blog feed of Jaswinder Singh. {{ site.description }}</description>
+    <description>Blog feed of {{ site.name | xml_escape }}. {{ site.description }}</description>
     <pubDate>2015</pubDate>
 
     {% for post in site.posts %}

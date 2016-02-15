@@ -56,7 +56,7 @@ $(document).ready(function(){
      ----------------------------------------------------------------------
      Nice scroll
      ----------------------------------------------------------------------
-     */
+     
     $("html").niceScroll({
         cursorcolor: '#fff',
         cursoropacitymin: '0',
@@ -157,25 +157,3 @@ $(document).ready(function(){
         });
     });
 }); // End $(document).ready(function(){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

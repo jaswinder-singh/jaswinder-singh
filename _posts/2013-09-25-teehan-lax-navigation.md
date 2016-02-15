@@ -25,7 +25,7 @@ We need some HTML code for the navigation. The navigation bar, `.site-width` (wh
 
     <nav>
       <div class="site-width">
-        <a href="http://twitter.com/itsjaswinder" target="_blank">Jaswinder Singh</a>
+        <a href="{{ site.twitter }}" target="_blank">Jaswinder Singh</a>
         <span class="menu icon" title="Menu (Esc)" tabindex="0" data-icon="m"><span>Menu</span></span>
       <div>
 
