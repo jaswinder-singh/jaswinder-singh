@@ -11,9 +11,15 @@ CACHE:
 /assets/css/style.css
 /assets/css/color.css
 /assets/css/responsive.css
-/assets/fonts/font-awesome/css/font-awesome.min.css
 /assets/boostrap-files/css/bootstrap.min.css
+/assets/fonts/google-fonts.css
+/assets/fonts/font-awesome/css/font-awesome.min.css
+
+# FONT files
 /assets/fonts/font-awesome/fonts/fontawesome-webfont3295.woff?v=4.5.0
+/assets/fonts/google-fonts/lato.woff2
+/assets/fonts/google-fonts/ubuntu.woff2
+/assets/fonts/google-fonts/ubuntu-bold.woff2
 
 # Javascripts
 /assets/boostrap-files/js/bootstrap.min.js
