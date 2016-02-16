@@ -1,10 +1,7 @@
 CACHE MANIFEST
-# Time: Mon Feb 15 2016 18:50:16 GMT+0000 (UTC)
+# Time: Mon Feb 16 2016 18:50:16 GMT+0000 (UTC)
 
 CACHE:
-# HTML files
-/contact/
-/profile/
 
 # CSS files
 /assets/css/animate.css
