@@ -61,7 +61,7 @@ $(document).ready(function(){
         cursorcolor: '#fff',
         cursoropacitymin: '0',
         cursoropacitymax: '1',
-        cursorwidth: '4px',
+        cursorwidth: '5px',
         zindex: 999999,
         horizrailenabled: false,
         enablekeyboard: false
