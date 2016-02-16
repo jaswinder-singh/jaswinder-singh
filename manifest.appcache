@@ -34,24 +34,34 @@ CACHE:
 /assets/js/menu.js
 
 # Images
-/assets/img/man-home.png
-/assets/img/loading.gif
-/assets/img/arrow.png
-/assets/img/comment_foto.png
-/assets/img/marker-color-blue.png
-/assets/img/close.svg
-/assets/img/profile_l.png
-/assets/img/blog_l.png
-/assets/img/contact_l.png
-/assets/img/portfolio_l.png
-/assets/img/resume_l.png
-/assets/img/search.svg
-/assets/img/close-white.svg
+/images/favicon.png
 /images/apple-touch-icon-57x57-precomposed.png
 /images/apple-touch-icon-72x72-precomposed.png
 /images/apple-touch-icon-114x114-precomposed.png
 /images/apple-touch-icon-144x144-precomposed.png
-/images/favicon.png
+/images/jaswinder.jpeg
+/assets/img/loading.gif
+/assets/img/menu/profile.gif
+/assets/img/menu/profile.png
+/assets/img/menu/portfolio.gif
+/assets/img/menu/portfolio.png
+/assets/img/menu/blog.gif
+/assets/img/menu/blog.png
+/assets/img/menu/contact.gif
+/assets/img/menu/contact.png
+/assets/img/loading.gif
+/assets/img/arrow.png
+/assets/img/comment_foto.png
+/assets/img/marker-color-blue.png
+/assets/img/search.svg
+/assets/img/close.svg
+/assets/img/close-white.svg
+/assets/img/profile_l.png
+/assets/img/contact_l.png
+/assets/img/portfolio_l.png
+/assets/img/blog_l.png
+# /assets/img/man-home.png
+# /assets/img/resume_l.png
 
 FALLBACK:
 / /appcache-fallback.html
