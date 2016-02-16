@@ -3,6 +3,9 @@ CACHE MANIFEST
 
 CACHE:
 
+# HTML files
+/profile.html
+
 # CSS files
 /assets/css/animate.css
 /assets/css/style.css
@@ -67,6 +70,7 @@ FALLBACK:
 / /appcache-fallback.html
 
 NETWORK:
+/contact.html
 *
 
 SETTINGS:

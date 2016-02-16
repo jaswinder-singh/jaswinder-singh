@@ -1,36 +1,25 @@
 ---
 title: Contact Me | Jaswinder Singh
 layout: default
-permalink: /contact/
+permalink: /contact.html
 ---
-    <!-- Start Head section -->
+
     <header class="head">
-        <!-- start container -->
         <div class="container">
-            <!-- start row -->
             <div class="row">
                 <div class="col-xs-8 col-sm-11 col-lg-11">
                     <img class="logo-page" src="{{ site.url }}/assets/img/contact_l.png" alt="{{ site.name }}">
-                    <!-- Title Page -->
                     <h2 class="title">Contact</h2>
-                    <!-- Description Page -->
                     <h4 class="sub-title">Get in touch with me</h4>
                 </div>
                 <div class="col-xs-4 col-sm-1 col-lg-1 text-right">
                     <a href="{{ site.url }}" class="btn-close hover-animate"></a>
                 </div>
             </div>
-            <!-- end row -->
         </div>
-        <!-- end container -->
     </header>
-    <!-- End Head section -->
-
-    <!-- Start Content section -->
     <section class="content padding-block border-bottom">
-        <!-- start container -->
         <div class="container">
-            <!-- start row -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-lg-6">
                     <h3 class="title title-contact">Contact info</h3>
@@ -70,18 +59,16 @@ permalink: /contact/
                                 <li><a class="ukie-icons hover-animate" href="{{ site.github }}"><i class="fa fa-github"></i></a></li>
                             </ul>
                         </div>
-                        <!-- end social icon -->
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-lg-6">
                     <h3 class="title title-contact">Contact form</h3>
-                    <!-- Start Contact Form -->
                     <div class="contact-form">
                         <form action="//formspree.io/{{ site.simple_email }}" id="contact-form" method="post">
                             <input type="text" id="user-name" name="user_name" value="" placeholder="Name" />
                             <input type="email" id="user-email" name="_replyto" value="" placeholder="Email" />
                             <textarea id="user-message" name="user-message" placeholder="Message"></textarea>
-                            <input type="hidden" name="_subject" value="Github - New submission! Contact Form" />
+                            <input type="hidden" name="_subject" value="Contact Form: New submission! - Github" />
                             <input type="text" name="_gotcha" style="display:none" />
                             <div class="footer-form">
                                 <input type="submit" id="submit-btn" class="btn btn-color hover-animate"  value="Send Message" />
@@ -92,27 +79,16 @@ permalink: /contact/
                             </div>
                         </form>
                     </div>
-                    <!-- End Contact Form -->
                 </div>
             </div>
-            <!-- end row -->
         </div>
-        <!-- end container -->
     </section>
-    <!-- End Content section -->
-
-    <!-- Start Map section -->
     <div class="contact-map padding-block text-center">
-        <!-- start container -->
         <div class="container">
-            <!-- start row -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-lg-12">
                     <div id="map" class="map"></div>
                 </div>
             </div>
-            <!-- end row -->
         </div>
-        <!-- end container -->
     </div>
-    <!-- End Map section -->
