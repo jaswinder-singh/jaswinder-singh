@@ -67,10 +67,13 @@ CACHE:
 # /assets/img/resume_l.png
 
 FALLBACK:
+# workaround to detect whether a 404 or No Internet.
+/assets/online.js offline.js 
 / /appcache-fallback.html
 
 NETWORK:
 /contact.html
+/assets/online.js
 *
 
 SETTINGS:
