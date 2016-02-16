@@ -26,7 +26,12 @@ layout: null
 <!-- img src="https://heroku-pages.herokuapp.com/503/build-icon.svg" align="left" height="60" style="margin-right:17px" -->
     <h1>Oops! Page Not Found</h1>
     <div>
-        <p align="justify">The page at the URL you've requested, <b><script>document.write('window.location.pathname');</script></b> does not exist; it may have been moved, or removed altogether. Here are some tips to get you back on your way:</p>
+        <p align="justify">The page at the URL you've requested, <b>
+<script>
+var pathArray = window.location.pathname;
+document.write(pathArray);
+</script>
+        </b> does not exist; it may have been moved, or removed altogether. Here are some tips to get you back on your way:</p>
         <p>
           <ul>
           <li>If you typed in the address, check your spelling. Could just be a typo.</li>
