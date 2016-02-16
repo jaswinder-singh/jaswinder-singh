@@ -5,7 +5,6 @@ CACHE:
 # HTML files
 /contact/
 /profile/
-/contact/
 
 # CSS files
 /assets/css/animate.css
