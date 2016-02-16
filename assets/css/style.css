@@ -274,7 +274,7 @@ a:hover, a:visited, a:focus, a:active{
     display: block;
 }
 .menu .menu-li .name{
-    font: 'Lato', Helvetica, sans-serif;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
     text-underline: none;
     margin-top: 13px;
     display: block;
@@ -1279,7 +1279,7 @@ a.icons-menu-button:focus,
 }
 .loader {
     position: absolute;
-    top: 47%;
+    top: 46%;
     left: 50%;
     margin: -100px 0 0 -100px;
     width: 200px;
@@ -1297,4 +1297,12 @@ a.icons-menu-button:focus,
 }
 .visible{
     visibility: visible;
+}
+
+.lato{
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+.ubuntu{
+    font-family: 'Ubuntu', Helvetica, sans-serif;
 }
