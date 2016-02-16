@@ -24,7 +24,7 @@
 --------------------*/
 *{
 /*    font-family: 'Raleway', Helvetica, Arial, sans-serif; */
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 body {
@@ -34,6 +34,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6{
     font-weight: 600;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 h1 {
     font-size: 66px;
@@ -244,10 +245,12 @@ a:hover, a:visited, a:focus, a:active{
     height: 232px;
 }
 .home-header .title{
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin-bottom: 0;
 }
 .home-header .sub-title{
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin: 0;
     line-height: 34px;
