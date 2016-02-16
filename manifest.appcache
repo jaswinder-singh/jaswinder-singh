@@ -68,7 +68,7 @@ CACHE:
 
 FALLBACK:
 # workaround to detect whether a 404 or No Internet.
-/assets/online.js offline.js 
+/assets/online.js /assets/offline.js 
 / /appcache-fallback.html
 
 NETWORK:
