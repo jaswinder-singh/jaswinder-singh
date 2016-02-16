@@ -1,8 +1,7 @@
 $(document).ready(function(){
     "use strict";
     $(".loader").delay(400).fadeOut();
-    $(".animationload").delay(400).fadeOut("fast");
-    //Check to see if the window is top if not then display button
+    $(".animationload").delay(400).fadeOut("fast");    //Check to see if the window is top if not then display button
     $(window).scroll(function(){
         if ($(this).scrollTop() > 400) {
             $('.scrollToTop').fadeIn();
@@ -21,7 +20,7 @@ $(document).ready(function(){
         var $div = $(this);
         var img = document.createElement('img');
         var img_name = $div.attr("data-img-name");
-        img.src = "/assets/img/menu/" + img_name + ".gif?t=" + new Date().getTime();
+        img.src = "/assets/img/menu/" + img_name + ".gif" //?t=" + new Date().getTime();
 
         $(img).load(function(){
             $div.attr("src",img.src);
