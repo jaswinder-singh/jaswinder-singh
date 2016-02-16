@@ -23,6 +23,5 @@ pretty_url: "jaswinder-singh.github.io"
 
 # paginate: 10
 
-markdown: rdiscount
+markdown: kramdown
 permalink: /post/:title.html
-# pygments: true
