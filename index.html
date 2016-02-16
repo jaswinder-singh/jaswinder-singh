@@ -6,53 +6,12 @@ layout: default
         <section class="home-header border-bottom padding-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-lg-5 text-center">
-                        <div class="full-length-photo">
+                    <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                        <div class="foto">
                             <img src="{{ site.url }}/assets/img/man-home.png" alt="Avatar">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-7 col-lg-7">
-                        <!-- Menu -->
-                        <div class="small-menu">
-                            <div class="icons-menu">
-                                <button class="icons-menu-toggle-button" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-                                    <i class="icons-menu-icon fa fa-bars"></i>
-                                </button>
-                                <ul class="icons-menu-items">
-                                    <li class="icons-menu-item">
-                                        <a href="{{ site.url }}/profile/" class="icons-menu-button" style="z-index: 2; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
-                                            <i class="icons-menu-icon fa fa-user" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
-                                        </a>
-                                    </li>
-                                    <!-- li class="icons-menu-item">
-                                        <a href="{{ site.url }}/resume.html" class="icons-menu-button" style="z-index: 1; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
-                                            <i class="icons-menu-icon fa fa-file-text" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
-                                        </a>
-                                    </li -->
-                                    <li class="icons-menu-item">
-                                        <a href="{{ site.lab }}/lab.html" class="icons-menu-button" style="z-index: 1; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
-                                            <i class="icons-menu-icon fa fa-rocket" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
-                                        </a>
-                                    </li>
-                                    <li class="icons-menu-item">
-                                        <a href="{{ site.url }}/blog/" class="icons-menu-button" style="z-index: 2; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
-                                            <i class="icons-menu-icon fa fa-pencil" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
-                                        </a>
-                                    </li>
-                                    <li class="icons-menu-item">
-                                        <a href="{{ site.url }}/contact/" class="icons-menu-button" style="z-index: 2; transform: matrix(0.95, 0, 0, 0.95, 0, 0);">
-                                            <i class="icons-menu-icon fa fa-envelope" style="transform: matrix(0, 0, 0, 0, 0, 0);"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="arrow">
-                                <div class="open-menu">open menu</div>
-                            </div>
-
-                        </div>
-
                         <h1 class="title">{{ site.name }}</h1>
                         <h3 class="sub-title">✮ Student ✮ Web buff ✮ Critical Thinker ✮ Music Lover</h3>
                         <div class="social">
@@ -70,3 +29,41 @@ layout: default
                 </div>
             </div>
         </section>
+        <nav class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-12">
+                        <a href="/profile/" class="menu-li">
+                            <span class="foto">
+                                <img src="/assets/img/menu/profile.png" class="menu-img" data-img-name="profile" alt="Profile" />
+                            </span>
+                            <span class="name">Profile</span>
+                        </a>
+                        <!-- a href="/resume/" class="menu-li">
+                            <span class="foto">
+                                <img src="/assets/img/menu/resume.png" class="menu-img" data-img-name="resume" alt="Resume">
+                            </span>
+                            <span class="name">Resume</span>
+                        </a -->
+                        <a href="/portfolio/" class="menu-li">
+                            <span class="foto">
+                                <img src="./assets/img/menu/portfolio.png" class="menu-img" data-img-name="portfolio" alt="Portfolio">
+                            </span>
+                            <span class="name">Portfolio</span>
+                        </a>
+                        <a href="/blog/" class="menu-li">
+                            <span class="foto">
+                                <img src="/assets/img/menu/blog.png" class="menu-img" data-img-name="blog" alt="Blog">
+                            </span>
+                            <span class="name">Blog</span>
+                        </a>
+                        <a href="/contact/" class="menu-li">
+                            <span class="foto">
+                                <img src="/assets/img/menu/contact.png" class="menu-img" data-img-name="contact" alt="Contact">
+                            </span>
+                            <span class="name">Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>

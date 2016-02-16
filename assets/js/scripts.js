@@ -85,8 +85,7 @@ $(document).ready(function(){
         if (isInView) {
             var $this = $(this);
             var myVal = $this.attr("value");
-            //var color = $this.attr("data-color"); // Uncomment after color selection
-            var color = $.cookie("colour-skills"); // Delete after color selection
+            var color = $this.attr("data-color"); // Uncomment after color selection
             $this.knob({
                 readOnly: true,
                 width: 160,
