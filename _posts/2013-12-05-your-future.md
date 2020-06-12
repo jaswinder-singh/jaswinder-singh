@@ -28,7 +28,7 @@ Take the lack of personalisation on the BBC’s website, for example. This was t
 
 [image of BBC]
 
-Why is the first story I see on their site about the Latvian PM who quit? Am I living in Latvia? The last time I checked I was located in Cyprus. How hard is it to implement a geolocation mechanism that shows me news from my country first?
+Why is the first story I see on their site about the Latvian PM who quit? Am I living in Latvia? The last time I checked I was located in India. How hard is it to implement a geolocation mechanism that shows me news from my country first?
 
 Same deal with the weather section on the right: “Wow, it’s 11˚ C?! Wait, no it’s not—I’m not in London”. My browser knows my location, why dear BBC website are you so stupid? Oh, you want me to type-in my location? In what format? City, City-Country, Country-City, ZIP code, Lat-Long, Google Maps link? Imagine how much more traffic they could’ve gotten if they at least did the weather section right. I could visit their site just to get info about the weather.
 
