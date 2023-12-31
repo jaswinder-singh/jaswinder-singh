@@ -25,5 +25,5 @@ What is the purpose of an icon if not to present in a beautiful, detailed, graph
 Think about the design aesthetics and how they **improve** or **worsen** the user experience. After all, a beautiful, trendy, golden ratio adherent, user interface that is difficult to use and navigate benefits no one.
 
 <div id="footnotes">
-<strong><em>[1] Kitch:</strong> Objects considered to be in poor taste because of excessive garishness.</em>
+<em><strong>[1] Kitch:</strong> Objects considered to be in poor taste because of excessive garishness.</em>
 </div>
