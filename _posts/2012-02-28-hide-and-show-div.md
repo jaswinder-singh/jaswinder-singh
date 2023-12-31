@@ -113,4 +113,4 @@ You can alter many CSS values, for example the JS code below will hide the `.tex
 		});
 	</script>
 
-Use the code wisely. If you have any questions, ask them in the comments section below.
+Use the code wisely.
