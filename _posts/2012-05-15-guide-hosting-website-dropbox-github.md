@@ -123,5 +123,3 @@ There are some disadvantages to both systems:
 * __GitHub:__ __1)__ requires special software and takes time to learn __2)__ pushing changes difficult via mobile/tablet and __3)__ can host only static files (HTML, CSS, JS)
 
 But for me it works. For me, the **advantages outweigh the disadvantages**. I like my websites more (since they load faster and stay online longer), I feel more relaxed and I also sleep better at night (secure servers, backups exist). Lastly, I feel liberated since I can access my files anytime from anywhere (and edit them, almost from any device).
-
-Next article I have scheduled, is a continuation of this one: [*“How I moved my blog to Dropbox”*]({{ site.url }}/post/blog-dropbox-scriptogram.html). Make sure you [follow me on Twitter]({{ site.twitter }}).
